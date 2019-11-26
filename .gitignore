@@ -1,0 +1,9 @@
+# ignore latex files
+*.pdf
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+
