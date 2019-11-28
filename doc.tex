@@ -302,6 +302,8 @@ Protože $ t \in \overline{W_\alpha} ,$ tedy hypotéza: $ H_0 : \mu_X - \mu_Y = 
 
 \newpage
 
+
+% TASK 2
 \textbf{2. Měřením dvojice (Výška[cm], Váha[kg]) u vybraných studentů z FIT byl získán dvourozměrný
 statistický soubor zapsaný po dvojicích v řádcích v listu Data\_př. 2.}
 
@@ -312,24 +314,40 @@ statistický soubor zapsaný po dvojicích v řádcích v listu Data\_př. 2.}
 
 $ n = 20 $ \\
 
-$ \overline{x} = TODO $ \\
+$ \overline{x} = 172,35 $ \\
 
-$ \overline{y} = TODO $ \\
+$ \overline{y} = 69,172607489 $ \\
 
-$ \sum\limits_{i=1}^{n} x_{i}^2 = TODO $ \\
+$ \sum\limits_{i=1}^{n} x_{i}^2 = 597981 $ \\
 
-$ \sum\limits_{i=1}^{n} y_{i}^2 = TODO $ \\
+$ \sum\limits_{i=1}^{n} y_{i}^2 = 101528,70165 $ \\
 
-$ \sum\limits_{i=1}^{n} x_i y_i = TODO $ \\
+$ \sum\limits_{i=1}^{n} x_i y_i = 242013,65983 $ \\
 
 \noindent\makebox[\linewidth]{\rule{\textwidth}{0.4pt}}
 
+% TASK 2a
 a) Vypočtěte bodový odhad koeficientu korelace. \\
 
-$ r = \ddfrac{\sum\limits_{i=1}^{n} x_i y_i - n * \overline{x} * \overline{y}}{\sqrt{\biggl( \sum\limits_{i=1}^{n} x_{i}^2 - n * \overline{x}^2 \biggr) \biggl( \sum\limits_{i=1}^n x_{i}^2 - n * \overline{y}^2 \biggr) } }  = TODO$ \\
+$ r = \ddfrac{\sum\limits_{i=1}^{n} x_i y_i - n * \overline{x} * \overline{y}}{\sqrt{\biggl( \sum\limits_{i=1}^{n} x_{i}^2 - n * \overline{x}^2 \biggr) \biggl( \sum\limits_{i=1}^n x_{i}^2 - n * \overline{y}^2 \biggr) } }  = 0,7506810259 $ \\
 
+\noindent\makebox[\linewidth]{\rule{\textwidth}{0.4pt}}
 
+%TASK 2b
+b) Na hladině významnosti 0,05 testujte hypotézu, že náhodné veličiny Výška a Váha jsou lineárně
+nezávislé.
 
+Testujeme hypotézu $ H_0 : \rho = 0 : $ \\
+
+testovací kritérium: $ t = \ddfrac{|r|\sqrt{n - 2}}{\sqrt{1 - r^2}} = 4,8207045282 $ \\
+
+doplněk kritického oboru: $ \overline{W_\alpha} = \Bigl< 0, t_{1-\alpha/2} \Bigr> $ pro alternativní hypotézu: $ H_A : \rho \ne 0, $ \\
+
+$ t_{1-\alpha/2}(n - 2) = t_{0,975} (20 - 2) = 2,100922037 $ \\
+
+Protože $ t \notin \overline{W_\alpha} $, tedy hypotéza: $ H_0 : \rho = 0 $ \textbf{se zamítá}. \\
+
+\noindent\makebox[\linewidth]{\rule{\textwidth}{0.4pt}}
 
 \newpage
 \section{Literatura}
