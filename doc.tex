@@ -224,6 +224,7 @@ $ \alpha = 0,01 : \biggl< \sqrt{\frac{(n - 1) s^2}{\chi_{1-\alpha/2}^2}} ; \sqrt
 \noindent\makebox[\linewidth]{\rule{\textwidth}{0.4pt}}
 \newpage
 
+% TASK 1f
 Testujte hypotézu optimálního seřízení stroje, tj. že střední hodnota odchylky je nulová, proti dvoustranné alternativní hypotéze, že střední hodnota odchylky je různá od nuly, a to na hladině významnosti 0,05. \\
 
 \textbf{Studentův jednovýběrový test:} \\
@@ -240,9 +241,63 @@ Protože $ t \in \overline{W_\alpha} $, tak hypotéza $ H_0 : \mu = 0 $ \textbf{
 
 \noindent\makebox[\linewidth]{\rule{\textwidth}{0.4pt}}
 
+% TASK 1g
+
+Ověřte statistickým testem na hladině významnosti 0,05, zda seřízení stroje ovlivnilo kvalitu výroby,
+víte-li, že výše uvedený statistický soubor 50-ti hodnot vznikl spojením dvou dílčích statistických
+souborů tak, že po naměření prvních 20-ti hodnot bylo provedeno nové seřízení stroje a pak bylo
+naměřeno zbývajících 30 hodnot.
 
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.60\textwidth]{img/1gtable.pdf}
+\end{figure}
 
+\begin{table}[]
+    \centering
+    \begin{tabular}{|c|c|c|}
+    \hline
+                                     & X                               & Y                               \\ \hline
+    n                                & 20                              & 30                              \\ \hline
+    průměr                           & -0,012                          & -0,196                          \\ \hline
+    rozptyl s\textasciicircum{}2     & 0,218736                        & 0,20277733                      \\ \hline
+    \multicolumn{1}{|l|}{směr\_odch} & \multicolumn{1}{l|}{0,46769221} & \multicolumn{1}{l|}{0,45030804} \\ \hline
+    \end{tabular}
+\end{table}
+
+\textbf{Test rovnosti rozptylů – F-test:} \\
+
+\textbf{Testujeme hypotézu} $H_0 : \sigma_{X}^2 = \sigma_{Y}^2 : $\\
+
+testovací kritérium: $ t = \frac{s^2(X)}{s^2(Y)} = \frac{0,218736}{0,20277733} = 1.078700464 $ \\
+
+doplněk kritického oboru: $ \overline{W_\alpha} = \Bigl< F_{\alpha/2} (n - 1, m - 1), F_{1-\alpha/2} (n - 1, m - 1) \Bigr> $ pro $ H_A : \sigma_{X}^2 \ne \sigma_{Y}^2$, $F_{\alpha/2}(k_1, k_2), F_{1-\alpha/2}(k_{1}, k_2) $ jsou kvantily Fischerova-Snedecorova rozdělení s $ k_1 = n - 1 $ a $ k2 = m - 1 $ stupni volnosti. \\
+
+$ F_{\alpha/2}(19, 29) = 0,416329667 $ \\
+
+$ F_{1-\alpha/2}(19, 29) = 2,231274 $ \\
+
+$ \Bigl< F_{\alpha/2} (n - 1, m - 1), F_{1-\alpha/2} (n - 1, m - 1) \Bigr> = \Bigl< 0,416329667, 2,231274 \Bigr> $ \\
+
+Protože $ t \in \overline{W_\alpha}$, tedy hypotéza $ H_0 : \sigma_{X}^2 = \sigma_{Y}^2$ \textbf{se nezamítá}. \\
+
+\vspace{0,7cm}
+\textbf{Studentův dvouvýběrový test:} \\
+ 
+\textbf{Testujeme hypotézu} $ H_0 : \mu_X - \mu_Y $ \textbf{za podmínky} $ \sigma_{X}^2 = \sigma{Y}^2 $\\
+
+testovací kritérium: $ t = \frac{\overline{x} - \overline{y} - \mu_0}{\sqrt{(n - 1) s^2(X) + (m - 1) s^2(Y)} } \sqrt{ \frac{n * m(n + m - 2)}{n + m} } = 1.393918382 $ \\
+
+doplněk kritického oboru: $ \overline{W_\alpha} = \Bigl< -t_{1-\alpha/2}, t_{1-\alpha/2} $ pro $ H_A : \mu_X - \mu_Y \ne 0 $, \\
+
+$ t_{1-\alpha/2} $ - kvantil Studentova rozdělení s $ k = n + m - 2 = 20 + 30 - 2 = 48 $ stupni volnosti. \\
+
+$ t_{1-\alpha/2} = 2,010634758 $ \\
+
+$ \overline{W_\alpha} = \Bigl< -t_{1-\alpha/2}, t_{1-\alpha/2} \Bigr> = \Bigl< -2,010634758; 2,010634758 \Bigr> $ \\
+
+Protože $ t \in \overline{W_\alpha} ,$ tedy hypotéza: $ H_0 : \mu_X - \mu_Y = 0 $ \textbf{se nezamítá}.
 
 \newpage
 
