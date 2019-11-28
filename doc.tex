@@ -144,7 +144,7 @@ $ s = \sqrt{\frac{1}{n} \sum\limits_{i=1}^n (x_i - \overline{x})^2} = 0.46613972
 
 
 \noindent\makebox[\linewidth]{\rule{\textwidth}{0.4pt}}
-% TASK 1b
+% TASK 1c
 
 c) Vypočtěte bodové odhady střední hodnoty, rozptylu a směrodatné odchylky. \\
 
@@ -153,6 +153,24 @@ Bodový odhad střední hodnoty: $ \overline{x} = \frac{1}{n} \sum\limits_{i=1}^
 Bodový odhad rozptylu: $ s^2 = \frac{1}{n - 1} \sum\limits_{i=1}^{n} (x_i - \overline{x})^2 = 0.22172065306122 $ \\
 
 Bodový odhad směrodatné odchylky: $ s = \sqrt{ \frac{1}{n - 1} \sum\limits_{i=1}^{n} (x_i - \overline{x})^2 } = 0.470872225833319 $ \\
+
+
+\noindent\makebox[\linewidth]{\rule{\textwidth}{0.4pt}}
+% TASK 1d
+
+Testujte předpoklad o výběru z normálního rozdělení Pearsonovým (chí-kvadrát) testem na hladině významnosti 0,05. \\
+
+\vspace{0.6cm}\includegraphics[width=\textwidth]{img/1dtable.pdf} \\
+
+Testovací kritérium: $ t = \sum\limits_{j=1}^{m} \frac{(f_j - \widehat{f_j})^2}{\widehat{f_j}} = 3.788479898122$, \\
+
+$\chi_{1-\alpha}^2$ pro $ k = 7 - 2 - 1$ stupňů volnosti: 9,488, \\
+
+doplněk kritického oboru: $ \overline{W_{\alpha}} = \langle 0, \chi_{1-\alpha}^2 \rangle = \langle 0, 9,488 \rangle$. \\
+
+Protože $ t \in \overline{W_{\alpha}} $, tedy hypotéza: $ X \sim N(-0,1224; 0,22172065306) $ \textbf{se nezamítá} . \\
+
+
 
 
 
