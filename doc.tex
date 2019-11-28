@@ -20,6 +20,7 @@
 \newcommand{\blue}[1]{\textcolor{blue}{#1}} % \blue{text in blue}
 \newcommand{\TODO}{\textbf{\textcolor{red}{TODO}}} % red bold TODO
 \newcommand{\tilda}{\raisebox{0.5ex}{\texttildelow}} % command \tilda for '~' character
+\newcommand\ddfrac[2]{\frac{\displaystyle #1}{\displaystyle #2}}
 
 \graphicspath{{img/}} % path to images
 \patchcmd{\thebibliography}{\section*{\refname}}{}{}{} % do not create section for bibliography
@@ -287,7 +288,7 @@ Protože $ t \in \overline{W_\alpha}$, tedy hypotéza $ H_0 : \sigma_{X}^2 = \si
  
 \textbf{Testujeme hypotézu} $ H_0 : \mu_X - \mu_Y $ \textbf{za podmínky} $ \sigma_{X}^2 = \sigma{Y}^2 $\\
 
-testovací kritérium: $ t = \frac{\overline{x} - \overline{y} - \mu_0}{\sqrt{(n - 1) s^2(X) + (m - 1) s^2(Y)} } \sqrt{ \frac{n * m(n + m - 2)}{n + m} } = 1.393918382 $ \\
+testovací kritérium: $ t = \ddfrac{\overline{x} - \overline{y} - \mu_0}{\sqrt{(n - 1) s^2(X) + (m - 1) s^2(Y)} } \sqrt{ \ddfrac{n * m(n + m - 2)}{n + m} } = 1.393918382 $ \\
 
 doplněk kritického oboru: $ \overline{W_\alpha} = \Bigl< -t_{1-\alpha/2}, t_{1-\alpha/2} $ pro $ H_A : \mu_X - \mu_Y \ne 0 $, \\
 
@@ -322,6 +323,11 @@ $ \sum\limits_{i=1}^{n} y_{i}^2 = TODO $ \\
 $ \sum\limits_{i=1}^{n} x_i y_i = TODO $ \\
 
 \noindent\makebox[\linewidth]{\rule{\textwidth}{0.4pt}}
+
+a) Vypočtěte bodový odhad koeficientu korelace. \\
+
+$ r = \ddfrac{\sum\limits_{i=1}^{n} x_i y_i - n * \overline{x} * \overline{y}}{\sqrt{\biggl( \sum\limits_{i=1}^{n} x_{i}^2 - n * \overline{x}^2 \biggr) \biggl( \sum\limits_{i=1}^n x_{i}^2 - n * \overline{y}^2 \biggr) } }  = TODO$ \\
+
 
 
 
