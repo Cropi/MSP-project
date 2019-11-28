@@ -178,8 +178,50 @@ Protože $ t \in \overline{W_{\alpha}} $, tedy hypotéza: $ X \sim N(-0,1224; 0,
 \noindent\makebox[\linewidth]{\rule{\textwidth}{0.4pt}}
 % TASK 1e
 
+Za předpokladu (bez ohledu na výsledek části d)), že statistický soubor byl získán náhodným výběrem z normálního rozdělení, určete intervalové odhady střední hodnoty, rozptylu a směrodatné
+odchylky se spolehlivostí 0,95 a 0,99. \\
 
+Předpoklad: $ X \sim N(\mu, \sigma^2), \sigma^2$ - neznámé \\
 
+Bodový odhad střední hodnoty: $ \overline{x} = \frac{1}{n} \sum\limits_{i=1}^{n} x_i = -0,1224 $ \\
+
+Bodový odhad rozptylu: $ s^2 = \frac{1}{n-1} \sum\limits{i=1}^{n} (x_i - \overline{x})^2 = 0.22172065306122 $ \\
+
+Bodový odhad směrodatné odchylky: $ s = \sqrt{\frac{1}{n-1} \sum\limits{i=1}^{n} (x_i - \overline{x})^2} = 0.470872225833319 $ \\ 
+
+\textbf{Intervalový odhad} parametru \textbf{$\mu:$}
+
+0,975 kvantil Studentova rozdělení $ t_{1-\frac{\alpha}{2}} $ s $ k = n - 1 = 50 - 1 = 49 $ stupni volnosti = 2,009575237 \\
+
+0,995 kvantil Studentova rozdělení $ t_{1-\frac{\alpha}{2}} $ s $ k = n - 1 = 50 - 1 = 49 $ stupni volnosti = 2,6779951964 \\
+
+$ \alpha = 0,05 : \biggl< \overline{x} - t_{1-\alpha/2} \frac{s}{\sqrt{n}} ; \overline{x} + t_{1-\alpha/2} \frac{s}{\sqrt{n}} \biggr> = \Bigl< -0,256220406; 0,011420406 \Bigr>$ \\
+
+$ \alpha = 0,01 : \biggl< \overline{x} - t_{1-\alpha/2} \frac{s}{\sqrt{n}} ; \overline{x} + t_{1-\alpha/2} \frac{s}{\sqrt{n}} \biggr> = \Bigl< -0.300731419; 0.055931419 \Bigr>$ \\
+
+\vspace{0,7cm}
+\textbf{Intervalový odhad} parametru \textbf{$\sigma^2:$}
+
+0,975 kvantil Pearsova rozdělení $ \chi_{\alpha/2}^2 $ s $ k = n - 1 = 50 - 1 = 49 $ stupni volnosti $ = 31,55491646 $ \\
+
+0,975 kvantil Pearsova rozdělení $ \chi_{1-\alpha/2}^2 $ s $ k = n - 1 = 50 - 1 = 49 $ stupni volnosti $ = 70,22241357 $ \\
+
+0,995 kvantil Pearsova rozdělení $ \chi_{\alpha/2}^2 $ s $ k = n - 1 = 50 - 1 = 49 $ stupni volnosti $ = 27,24934921 $ \\
+
+0,995 kvantil Pearsova rozdělení $ \chi_{1-\alpha/2}^2 $ s $ k = n - 1 = 50 - 1 = 49 $ stupni volnosti $ = 78,23070806 $ \\
+
+$ \alpha = 0,05 : \biggl< \frac{(n - 1) s^2}{\chi_{1-\alpha/2}^2} ; \frac{(n - 1) s^2}{\chi_{\alpha/2}^2} \biggr> = \Bigl< 0.154712882 ; 0.344298551 \Bigr> $ \\
+
+$ \alpha = 0,01 : \biggl< \frac{(n - 1) s^2}{\chi_{1-\alpha/2}^2} ; \frac{(n - 1) s^2}{\chi_{\alpha/2}^2} \biggr> = \Bigl< 0.138875287 ; 0.39869987 \Bigr> $ \\
+
+\vspace{0,7cm}
+\textbf{Intervalový odhad} parametru \textbf{$\sigma:$}
+
+$ \alpha = 0,05 : \biggl< \sqrt{\frac{(n - 1) s^2}{\chi_{1-\alpha/2}^2}} ; \sqrt{\frac{(n - 1) s^2}{\chi_{\alpha/2}^2}} \biggr> = \Bigl< \sqrt{0.154712882} ; \sqrt{0.344298551} \Bigr> = \Bigl< 0.393335584  ; 0.586769589 \Bigr> $ \\
+
+$ \alpha = 0,01 : \biggl< \sqrt{\frac{(n - 1) s^2}{\chi_{1-\alpha/2}^2}} ; \sqrt{\frac{(n - 1) s^2}{\chi_{\alpha/2}^2}} \biggr> = \Bigl< \sqrt{0.138875287} ; \sqrt{0.39869987} \Bigr> = \Bigl< 0.372659747 ; 0.631426852 \Bigr> $ \\
+
+\noindent\makebox[\linewidth]{\rule{\textwidth}{0.4pt}}
 
 
 \newpage
