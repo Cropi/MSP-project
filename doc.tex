@@ -222,6 +222,26 @@ $ \alpha = 0,05 : \biggl< \sqrt{\frac{(n - 1) s^2}{\chi_{1-\alpha/2}^2}} ; \sqrt
 $ \alpha = 0,01 : \biggl< \sqrt{\frac{(n - 1) s^2}{\chi_{1-\alpha/2}^2}} ; \sqrt{\frac{(n - 1) s^2}{\chi_{\alpha/2}^2}} \biggr> = \Bigl< \sqrt{0.138875287} ; \sqrt{0.39869987} \Bigr> = \Bigl< 0.372659747 ; 0.631426852 \Bigr> $ \\
 
 \noindent\makebox[\linewidth]{\rule{\textwidth}{0.4pt}}
+\newpage
+
+Testujte hypotézu optimálního seřízení stroje, tj. že střední hodnota odchylky je nulová, proti dvoustranné alternativní hypotéze, že střední hodnota odchylky je různá od nuly, a to na hladině významnosti 0,05. \\
+
+\textbf{Studentův jednovýběrový test:} \\
+
+\textbf{Testujeme hypotézu} $ H_0 : \mu = 0: $ \\
+
+testovací kritérium: $ t = \frac{\overline{x} - \mu_0}{s} \sqrt{n} = \frac{\overline{x} - 0}{s} \sqrt{n} = -1.838075496$ \\
+
+doplněk kritického oboru: $ \overline{W_\alpha} = \Bigl< -t_{1-alpha/2} , t_{1-\alpha/2} \Bigr> $ pro alternativní hypotézu: $ H_A : \mu \ne \mu_0, 0,975 $ kvantil Studentova rozdělení $ t_{1-\alpha/2} $ s $ k = n - 1 = 50 - 1 = 49 $ stupni volnosti $ = 2,009575237 $ \\
+
+$ \overline{W_\alpha} = \Bigl< -t_{1-\alpha/2} , t_{1-\alpha/2} \Bigr> = \Bigl< -2,009575237, 2,0095752 \Bigr> $
+
+Protože $ t \in \overline{W_\alpha} $, tak hypotéza $ H_0 : \mu = 0 $ \textbf{se nezamítá} a alternativní hypotéza $ H_A : \mu \ne 0 $ se zamítá.
+
+\noindent\makebox[\linewidth]{\rule{\textwidth}{0.4pt}}
+
+
+
 
 
 \newpage
