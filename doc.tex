@@ -378,7 +378,7 @@ $ b_2 = \ddfrac{1}{det(h)} \biggl( n \sum\limits_{i=1}^{n} x_i y_i - \sum\limits
 
 $ b_1 = \overline{y} - b_2 * \overline{x} = -89,22884239 $ \\
 
-$ y = b_1 + b_2 * x = -89,22884239 + 0,9190684646 $ \\
+$ y = b_1 + b_2 * x = -89,22884239 + 0,9190684646x $ \\
 
 $ S_{min}^{*} = \sum\limits_{i=1}^{n} y_{i}^2 - b_1 \sum\limits_{i=1}^n y_i - b_2 \sum\limits_{i=1}^n x_i y_i = 2545,4127125 $ \\
 
@@ -402,22 +402,24 @@ $ H: \beta_1 = 1, H_A : \beta_1 \ne 1, $ \\
 
 $ h_{22} = \ddfrac{n}{det(H)} = 0.000257033067304 $ \\
 
-$ t = \ddfrac{b_2 - 1}{s * \sqrt{h^22}} = -0.424502672132561 $ \\
+$ t = \ddfrac{b_2 - 1}{s * \sqrt{h^{22}}} = -0.424502672132561 $ \\
 
 $ t_{1-\alpha/2} (n - 2) = t_{0,975} (20 - 2) = 2,100922037 $ \\
 
 $ t \in \overline{W} = \Bigl< -2,100922037, 2,100922037 \Bigr>, $ a tedy $ H : \beta_2 = 1 $ \textbf{se nezamítá} \\
 
 \noindent\makebox[\linewidth]{\rule{\textwidth}{0.4pt}}
+
+3) Vytvořte graf bodů spolu s regresní přímkou a pásem spolehlivosti pro individuální hodnotu výšky. \\
 \newpage
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{img/2ctablefinal.pdf}
+\end{figure}
 
 
-
-
-
-
-
+\newpage
 \section{Literatura}
 \bibliographystyle{czechiso}
 \begin{flushleft}
