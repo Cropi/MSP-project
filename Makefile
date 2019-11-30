@@ -4,7 +4,6 @@ FILE=doc
 .PHONY: make
 make: clean
 	@pdflatex -draftmode $(FILE)
-	@bibtex $(FILE)
 	@pdflatex -draftmode $(FILE)
 	@pdflatex $(FILE)
 
