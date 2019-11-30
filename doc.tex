@@ -368,6 +368,24 @@ $\sum\limits_{i=1}^{n} x_{i}^2 = 597981, \sum\limits_{i=1}^n y_{i}^2 = 101528,70
 $\sum\limits_{i=1}^n x_i * y_i = 242013,66. $
 
 \newpage
+
+$ det(H) = n \sum\limits_{i=1}^{n} x{i}^2 - \Bigl( \sum\limits_{i=1}^{n} x_i \Bigr)^2 = 77811$ \\
+
+1) Bodově odhadněte $ \beta_0, \beta_1 $ a rozptyl $ s^2 $. \\
+
+$ b_2 = \ddfrac{1}{det(h)} \biggl( n \sum\limits_{i=1}^{n} x_i y_i - \sum\limits_{i=1}^{n} x_i \sum\limits_{i=1}^{n} y_i \biggr) = 0,9190684646 $ \\
+
+$ b_1 = \overline{y} - b_2 * \overline{x} = -89,22884239 $ \\
+
+$ y = b_1 + b_2 * x = -89,22884239 + 0,9190684646 $ \\
+
+$ S_{min}^{*} = \sum\limits_{i=1}^{n} y_{i}^2 - b_1 \sum\limits_{i=1}^n y_i - b_2 \sum\limits_{i=1}^n x_i y_i = 2545,4127125 $ \\
+
+$ s^2 = \ddfrac{S_{min}^{*}}{n - 2} = \ddfrac{S_{min}^{*}}{20 - 2} = 141,41181736 $ \\
+\vspace{0,7cm}
+
+
+
 \section{Literatura}
 \bibliographystyle{czechiso}
 \begin{flushleft}
