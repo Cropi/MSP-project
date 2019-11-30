@@ -371,6 +371,7 @@ $\sum\limits_{i=1}^n x_i * y_i = 242013,66. $
 
 $ det(H) = n \sum\limits_{i=1}^{n} x{i}^2 - \Bigl( \sum\limits_{i=1}^{n} x_i \Bigr)^2 = 77811$ \\
 
+%TASK 2c SUBTASK 1
 1) Bodově odhadněte $ \beta_0, \beta_1 $ a rozptyl $ s^2 $. \\
 
 $ b_2 = \ddfrac{1}{det(h)} \biggl( n \sum\limits_{i=1}^{n} x_i y_i - \sum\limits_{i=1}^{n} x_i \sum\limits_{i=1}^{n} y_i \biggr) = 0,9190684646 $ \\
@@ -383,6 +384,37 @@ $ S_{min}^{*} = \sum\limits_{i=1}^{n} y_{i}^2 - b_1 \sum\limits_{i=1}^n y_i - b_
 
 $ s^2 = \ddfrac{S_{min}^{*}}{n - 2} = \ddfrac{S_{min}^{*}}{20 - 2} = 141,41181736 $ \\
 \vspace{0,7cm}
+
+%TASK 2c SUBTASK 2
+2) Na hladin ě významnosti 0,05 otestujte hypotézy: \\
+
+$ H : \beta_0 = -100, H_A : \beta_0 \ne -100 $, \\
+
+$ h^{11} = \ddfrac{\sum\limits_{i=1}^{n} x_{i}^2}{det(H)} = 7,68504453097891 $ \\
+
+$ t = \ddfrac{b_1 - (-100)}{s\sqrt{h^{11}}} = 0,326735508653823 $ \\
+
+$ t_{1-\alpha/2} (n - 2) = t_{0,975} (20 - 2) = 2,100922037 $ \\
+
+$ t \in \overline{W} = \Bigl< -2,100922037, 2,100922037 \Bigr> $, a tedy $ H : \beta_1 = -100 $ \textbf{se nezamítá} \\
+
+$ H: \beta_1 = 1, H_A : \beta_1 \ne 1, $ \\
+
+$ h_{22} = \ddfrac{n}{det(H)} = 0.000257033067304 $ \\
+
+$ t = \ddfrac{b_2 - 1}{s * \sqrt{h^22}} = -0.424502672132561 $ \\
+
+$ t_{1-\alpha/2} (n - 2) = t_{0,975} (20 - 2) = 2,100922037 $ \\
+
+$ t \in \overline{W} = \Bigl< -2,100922037, 2,100922037 \Bigr>, $ a tedy $ H : \beta_2 = 1 $ \textbf{se nezamítá} \\
+
+\noindent\makebox[\linewidth]{\rule{\textwidth}{0.4pt}}
+\newpage
+
+
+
+
+
 
 
 
