@@ -1,2 +1,4 @@
 # MSP-project
-Projekt do predmetu MSP
+
+Obtained points 9.0/10.0
+
